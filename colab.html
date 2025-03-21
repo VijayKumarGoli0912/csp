@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVIT - Community Service Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Digital Literacy Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="colab.html">Collabration</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-danger" href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>VVIT</h1>
+            <p>Empowering communities through education and sustainable solutions.</p>
+            <a href="#about" class="btn btn-success btn-lg m-2">Learn More</a>
+            <a href="#contact" class="btn btn-warning btn-lg m-2">Get Involved</a>
+        </div>
+    </section>
+    
+    <section id="about" class="container my-5">
+        <h2 class="text-primary text-center mb-4">About the Project</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    This project is a collaboration between <strong>Vasireddy Venkatadri Institute of Technology (VVIT)</strong> and <strong>Uppalapadu Village</strong> to enhance digital literacy and sustainable development.
+                </p>
+                <ul class="list-group">
+                    <li class="list-group-item">Improving education and digital access</li>
+                    <li class="list-group-item">Promoting environmental sustainability</li>
+                    <li class="list-group-item">Engaging students in real-world community solutions</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="images/project-team.jpg" class="img-fluid rounded" alt="Project Team">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container text-center my-5">
+        <h2 class="text-primary">Project Done by</h2>
+        <p><strong><h2>Goli Vijay Kumar</h2></strong></p>
+        <p><strong><h2>Roll No:</strong> 21BQ1A6120</h2></p>
+        <p><strong><h3>Department:</strong> AIM (Artificial Intelligence & Machine Learning)</h3></p>
+    </section>
+    
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 VVIT. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

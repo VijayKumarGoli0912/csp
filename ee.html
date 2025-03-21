@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Essentials - Digital Literacy Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Digital Literacy Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="course.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colab.html">Collabration</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-danger" href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2>Email Essentials</h2>
+            <p>Learn how to create, manage, and secure your email account effectively.</p>
+            <a href="course.html" class="btn btn-warning">⬅ Back to Courses</a>
+        </div>
+    </section>
+    
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-primary">What Are Email Essentials?</h3>
+                <p>Email is one of the most important tools for communication in today's digital world. Learning how to use email efficiently and securely is crucial for both personal and professional use.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Setting up an email account</li>
+                    <li class="list-group-item">Understanding email etiquette and formatting</li>
+                    <li class="list-group-item">Managing inbox organization</li>
+                    <li class="list-group-item">Recognizing phishing scams and security threats</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/email-essentials.jpg" class="img-fluid rounded" alt="Email Essentials">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container text-center my-5">
+        <h3 class="text-primary">Watch a Quick Tutorial</h3>
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://youtube.com/embed/gm8jhg8I_Hk?si=PEbE3waDdtTdqS6z" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 Digital Literacy Hub. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

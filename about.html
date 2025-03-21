@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Literacy Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Digital Literacy Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colab.html">Collabration</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-danger" href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="text-primary">About Digital Literacy Hub</h2>
+                <p class="lead">We are dedicated to providing high-quality digital literacy courses for learners of all ages.</p>
+                <p>Our mission is to empower individuals with essential digital skills to thrive in today's tech-driven world.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/about-us.jpg" class="img-fluid rounded" alt="About Us">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container text-center my-5">
+        <h2 class="text-primary mb-4">Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/team1.jpg" class="img-fluid rounded-circle mb-3" alt="G VIJAY KUMAR">
+                <h4>G VIJAY KUMAR</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/team2.jpg" class="img-fluid rounded-circle mb-3" alt="RAM">
+                <h4>V RAM</h4>
+                <p>Head of Learning</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/team3.jpg" class="img-fluid rounded-circle mb-3" alt="JAANU">
+                <h4>G JAANU</h4>
+                <p>Community Manager</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 Digital Literacy Hub. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
